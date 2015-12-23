@@ -1,0 +1,19 @@
+//http://cpbook.subeen.com/2012/11/square-number.html
+#include <stdio.h>
+int main()
+{
+        int t,cas,res;
+        double a,b;
+        scanf("%d",&cas);
+        for(t=1;t<=cas;t++)
+        {
+                scanf("%lf",&a);
+                res=sqrt(a);
+                b=sqrt(a);
+                if(res==b)
+                printf("YES\n");
+                else
+                printf("NO\n");
+        }
+        return 0;
+}

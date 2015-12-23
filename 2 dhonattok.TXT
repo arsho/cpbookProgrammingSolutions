@@ -1,0 +1,17 @@
+//http://cpbook.subeen.com/2012/11/positive-negative.html
+#include <stdio.h>
+int main()
+{
+        int pos=0,neg=0,t,cas,num;
+        scanf("%d",&cas);
+        for(t=1;t<=cas;t++)
+        {
+                scanf("%d",&num);
+                if(num<0)
+                neg++;
+                else if(num>0)
+                pos++;
+        }
+        printf("%d %d\n",pos,neg);
+        return 0;
+}

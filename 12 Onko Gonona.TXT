@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+        int t,cas,count;
+        long n;
+        scanf("%d",&cas);
+        for(t=1;t<=cas;t++)
+        {
+                count=0;
+                scanf("%ld",&n);
+                if(n==0)
+                count=1;
+                while(n>0)
+                {
+                        n/=10;
+                        count++;
+                }
+                printf("%d\n",count);
+        }
+        return 0;
+}

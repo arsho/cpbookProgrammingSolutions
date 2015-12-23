@@ -1,0 +1,27 @@
+//http://cpbook.subeen.com/2013/01/kon-dhara.html
+#include <stdio.h>
+int main()
+{
+        int t,cas;
+        double a,b,c,d,e,f,g;
+        scanf("%d",&cas);
+        for(t=1;t<=cas;t++)
+        {
+                scanf("%lf%lf%lf",&a,&b,&c);
+                printf("Case %d: ",t);
+                d=b/a;
+                e=c/b;
+                f=b-a;
+                g=c-b;
+                if(d==e&&f==g)
+                printf("Both\n");
+                else if(d==e)
+                printf("Geometric Progression\n");
+                else if(f==g)
+                printf("Arithmetic Progression\n");
+                else
+                printf("None\n");
+
+        }
+        return 0;
+}

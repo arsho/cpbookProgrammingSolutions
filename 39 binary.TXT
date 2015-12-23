@@ -1,0 +1,33 @@
+import java.util.Scanner;
+ 
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String line,fuck;
+        int cas,i,j,lowerbound,upperbound,tmp,num;
+        double num2,two=2,p,q;
+        cas=sc.nextInt();
+        for(i=0;i<cas;i++){
+          num2=sc.nextDouble();
+          num=(int)num2;
+          if(num==1){
+              for(j=0;j<2;j++)
+          {
+              fuck=Integer.toBinaryString(j);
+              System.out.println(fuck);
+          }
+          }
+          else{
+          num--;
+          p=Math.pow(two, num);
+          q=Math.pow(two, num+1);
+          lowerbound=(int)p;
+          upperbound=(int)q;
+          for(j=lowerbound;j<upperbound;j++)
+          {
+              fuck=Integer.toBinaryString(j);
+              System.out.println(fuck);
+          }
+          }
+        }}} 
+ 

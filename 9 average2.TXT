@@ -1,0 +1,50 @@
+//http://cpbook.subeen.com/2012/11/average-2.html
+#include<cstdio>
+#include<cstring>
+#include<cassert>
+#include<vector>
+#include<list>
+#include<queue>
+#include<map>
+#include<set>
+#include<deque>
+#include<stack>
+#include<bitset>
+#include<algorithm>
+#include<functional>
+#include<numeric>
+#include<utility>
+#include<sstream>
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+#include<cstdlib>
+#include<ctime>
+#include<fstream>
+#include<typeinfo>
+#include<locale>
+#include<iterator>
+#include<valarray>
+#include<complex>
+#include<climits>
+
+using namespace std;
+
+int main()
+{
+        int cas,t,i,num,n,res;
+        double ans;
+        scanf("%d",&cas);
+        for(t=1;t<=cas;t++)
+        {
+                res=0;
+                scanf("%d",&n);
+               for(i=0;i<n;i++){
+                        scanf("%d",&num);
+                        res+=num;
+               }
+               ans=(double)res/n;
+                printf("%.2lf\n",ans);
+        }
+      return 0;
+}

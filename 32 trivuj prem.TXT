@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int cas,t,b,h;
+        cas=sc.nextInt();
+        for(t=1;t<=cas;t++)
+        {
+            b=sc.nextInt();
+            h=sc.nextInt();
+            System.out.println("Case "+t+": "+(b*h));
+        }
+    }
+}

@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <math.h>
+long long a[1000005];
+void seive()
+{
+          long long i,j,n=1000000,m=sqrt(1000000);
+          a[1]=0;
+          for(i=2;i<=n;i++)
+                    a[i]=1;
+          for(i=2;i<=m;i++)
+          {
+                    if(a[i]==1)
+                    {
+                              for(j=2*i;j<=n;j+=i)
+                                        a[j]=0;
+                    }
+          }
+}
+main()
+{
+          seive();
+          int cas,t;
+          long long num,sqnum,i,j;
+          scanf("%d",&cas);
+          for(t=1;t<=cas;t++)
+          {
+          scanf("%lld",&num);
+
+                    sqnum=sqrt(num);
+                    j=0;
+                    for(i=2;i<=sqnum;i++)
+                    {
+                              if(a[i]==1)
+                              {
+                                        if(num%i==0)
+                                        {
+                                                  j=1;
+                                                  break;
+                                        }
+                              }
+                    }
+                    if(j==0)
+                              printf("%lld is a prime\n",num);
+                    else
+                              printf("%lld is not a prime\n",num);
+
+          }
+          return 0;
+}

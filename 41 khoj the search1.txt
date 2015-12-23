@@ -1,0 +1,65 @@
+#include<cstdio>
+#include<cstring>
+#include<cassert>
+#include<vector>
+#include<list>
+#include<queue>
+#include<map>
+#include<set>
+#include<deque>
+#include<stack>
+#include<bitset>
+#include<algorithm>
+#include<functional>
+#include<numeric>
+#include<utility>
+#include<sstream>
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+#include<cstdlib>
+#include<ctime>
+#include<fstream>
+#include<typeinfo>
+#include<locale>
+#include<iterator>
+#include<valarray>
+#include<complex>
+#include<climits>
+
+using namespace std;
+#define inf INT_MAX
+#define pi 2*acos(0.0)
+#define mod 1000000000
+
+int main()
+{
+        int i,j,n,cas,t,len1,len2,k,ans;
+        string s1,s2;
+        cin>>n;
+        for(t=0;t<n;t++)
+        {
+                cin>>s1>>s2;
+                len1=s1.length();
+                len2=s2.length();
+                for(i=0;i<len1;i++)
+                {
+                        if(s1[i]==s2[0])
+                        {
+                                bool check=true;
+                                j=0;
+                                for(k=i;k<i+len2;k++)
+                                {
+                                        if(s1[k]!=s2[j])
+                                                check=false;
+                                                j++;
+                                }
+                                if(check==true){
+                                        printf("%d\n",i);
+                                        break;
+                                }
+                        }
+                }
+        }
+      return 0;
+}

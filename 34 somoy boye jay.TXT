@@ -1,0 +1,88 @@
+import java.util.Scanner;
+public class Main {
+    static void vag(long num)
+    {
+        long mn=60,hr=mn*60,day=hr*24,mon=day*30,yr=mon*12;
+        long a,b,c,d,e,f,g,h,i,j;
+        a=num/yr;
+        if(a>0)
+        {
+            if(a==1)
+                System.out.print(a+" year");
+            else
+                System.out.print(a+" years");
+            num-=yr*a;
+            if(num>0)
+                System.out.print(" ");        
+        }
+        b=num/mon;
+        if(b>0)
+        {
+            if(b==1)
+                System.out.print(b+" month");
+            else
+                System.out.print(b+" months");
+            num-=mon*b;
+             if(num>0)
+                System.out.print(" "); 
+        }
+        
+        c=num/day;
+        if(c>0)
+        {
+            if(c==1)
+                System.out.print(c+" day");
+            else
+                System.out.print(c+" days");
+            num-=day*c;
+             if(num>0)
+                System.out.print(" "); 
+        }
+        
+        d=num/hr;
+        if(d>0)
+        {
+            if(d==1)
+                System.out.print(d+" hour");
+            else
+                System.out.print(d+" hours");
+            num-=hr*d;
+             if(num>0)
+                System.out.print(" "); 
+        }
+        
+        e=num/mn;
+        if(e>0)
+        {
+            if(e==1)
+                System.out.print(e+" minute");
+            else
+                System.out.print(e+" minutes");
+            num-=mn*e;
+             if(num>0)
+                System.out.print(" "); 
+        }
+        f=num;
+        if(f>0)
+        {
+            if(f==1)
+                System.out.print(f+" second");
+            else
+                System.out.print(f+" seconds");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int cas,t;
+        long time,sec;
+        cas=sc.nextInt();
+        for(t=1;t<=cas;t++)
+        {
+            time=sc.nextLong();
+            
+            System.out.print("Case "+t+": ");
+            vag(time);
+            System.out.println();
+        }
+    }
+}

@@ -1,0 +1,16 @@
+//http://cpbook.subeen.com/2012/11/ascii-add.html
+#include <stdio.h>
+int main()
+{
+        int t,cas,res;
+        char a,b,c;
+        scanf("%d",&cas);
+        for(t=1;t<=cas;t++)
+        {
+                getchar();
+                scanf("%c%c%c",&a,&b,&c);
+                res=a+b+c;
+                printf("%d\n",res);
+        }
+        return 0;
+}

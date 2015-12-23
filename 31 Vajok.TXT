@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+        int t,cas;
+        long i,n;
+        scanf("%d",&cas);
+        for(t=1;t<=cas;t++)
+        {
+                scanf("%ld",&n);
+                printf("Case %d:",t);
+                for(i=1;i<=n;i++)
+                {
+                        if(n%i==0)
+                        printf(" %d",i);
+                }
+                printf("\n");
+        }
+        return 0;
+}

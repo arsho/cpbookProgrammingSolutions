@@ -1,0 +1,31 @@
+import java.util.Scanner;
+ 
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int cas,i,t,j,len,ans,tmp;
+        String line,line2,line3;
+        cas=sc.nextInt();
+        for(t=1;t<=cas;t++)
+        {
+            ans=0;
+            line3="";
+            line=sc.next();
+            len=line.length();
+            tmp=len-1;
+            for(i=0;i<len;i++)
+            {
+                j=line.charAt(i)-'0';
+                if(j%2==0)
+                    j++;
+                else
+                    j--;
+                line2=String.valueOf(j);
+                line3+=line2;
+            }
+            ans=Integer.parseInt(line3);
+            System.out.println(ans);
+        }
+ 
+    }
+}

@@ -1,0 +1,79 @@
+#include<cstdio>
+#include<cstring>
+#include<cassert>
+#include<vector>
+#include<list>
+#include<queue>
+#include<map>
+#include<set>
+#include<deque>
+#include<stack>
+#include<bitset>
+#include<algorithm>
+#include<functional>
+#include<numeric>
+#include<utility>
+#include<sstream>
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+#include<cstdlib>
+#include<ctime>
+#include<fstream>
+#include<typeinfo>
+#include<locale>
+#include<iterator>
+#include<valarray>
+#include<complex>
+#include<climits>
+
+using namespace std;
+#define uld unsingned long long
+#define ld long long
+#define inf INT_MAX
+#define pi 2*acos(0.0)
+#define vi vector<int>
+#define  vl vector<long long>
+#define pdd pair<int, int>
+#define pll pair<long long, long long>
+#define mp make_pair
+#define mdd map<int, int>
+#define mod 1000000000
+#define pf first
+#define ps second
+#define vsort(v) sort(v.begin(), v.end())
+#define cas(a) printf("Case %d:",a)
+#define pb push_back
+struct rect
+{
+    int x1,x2,y1,y2;
+    void in()
+    {
+        cin>>x1>>y1>>x2>>y2;
+    }
+};
+
+main()
+{
+    int a,b,c,d,e,f,g,h,x,y,z;
+
+    cin>>a;
+    for(z=0;z<a;z++)
+    {
+
+        rect r1,r2;
+        b=0;
+        r1.in();
+        r2.in();
+        if(r1.x1>r2.x1)swap(r1,r2);
+        if(r2.x1>=r1.x2)b++;
+        if(r2.y1>=r1.y2)b++;
+        if(r2.y2<=r1.y1)b++;
+        
+         cout<<"Case "<<z+1<<": ";
+        if(b==0)cout<<"Yes";
+        else cout<<"No";
+        cout<<endl;
+    }
+    return 0;
+}

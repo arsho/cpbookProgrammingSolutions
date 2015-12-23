@@ -1,0 +1,47 @@
+#include<cstdio>
+#include<cstring>
+#include<cassert>
+#include<vector>
+#include<list>
+#include<queue>
+#include<map>
+#include<set>
+#include<deque>
+#include<stack>
+#include<bitset>
+#include<algorithm>
+#include<functional>
+#include<numeric>
+#include<utility>
+#include<sstream>
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+#include<cstdlib>
+#include<ctime>
+#include<fstream>
+#include<typeinfo>
+#include<locale>
+#include<iterator>
+#include<valarray>
+#include<complex>
+#include<climits>
+
+using namespace std;
+
+int main()
+{
+    int cas,t,i,num[6];
+    scanf("%d",&cas);
+    for(t=1; t<=cas; t++)
+    {
+        for(i=0; i<3; i++)
+            scanf("%d",&num[i]);
+        printf("Case %d:",t);
+        sort(num,num+3);
+        for(i=0; i<3; i++)
+            printf(" %d",num[i]);
+        printf("\n");
+    }
+    return 0;
+}

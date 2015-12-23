@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+        int t,cas,res;
+        int a,b,c;
+        scanf("%d",&cas);
+        for(t=1;t<=cas;t++)
+        {
+                scanf("%d%d%d",&a,&b,&c);
+                if((2*a<=b)&&(2*a<=c))
+                printf("YES\n");
+                else
+                printf("NO\n");
+        }
+        return 0;
+}

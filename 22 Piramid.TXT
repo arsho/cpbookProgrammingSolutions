@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+        int i,n,t,cas,j,k;
+        char line[5500];
+        scanf("%d",&cas);
+        for(t=1;t<=cas;t++)
+        {
+                if(t!=1)
+                printf("\n");
+                scanf("%d",&n);
+                for(i=1;i<=n;i++)
+                {
+                        for(k=i;k<=n-1;k++)
+                        printf(" ");
+                        for(j=1;j<=(i*2-1);j++)
+                        {
+                                printf("*");
+                        }
+                        printf("\n");
+                }
+        }
+        return 0;
+}
+

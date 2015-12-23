@@ -1,0 +1,21 @@
+
+#include<stdio.h>
+int main()
+{
+        int cas,t,d,h,i,j;
+        scanf("%d",&cas);
+        for(t=1;t<=cas;t++)
+        {
+                scanf("%d%d",&d,&h);
+                printf("Case %d:\n",t);
+                for(i=1;i<=h;i++)
+                {
+                        for(j=1;j<=i;j++)
+                        {
+                                printf("%d",d);
+                        }
+                        printf("\n");
+                }
+        }
+      return 0;
+}

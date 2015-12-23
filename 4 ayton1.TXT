@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+        int t,cas;
+        double a,b,c,res;
+        scanf("%d",&cas);
+        for(t=1;t<=cas;t++)
+        {
+                scanf("%lf%lf%lf",&a,&b,&c);
+                res=a*b*c;
+                printf("%.0lf\n",res);
+
+        }
+        return 0;
+}

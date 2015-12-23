@@ -1,0 +1,68 @@
+#include<cstdio>
+#include<cstring>
+#include<cassert>
+#include<vector>
+#include<list>
+#include<queue>
+#include<map>
+#include<set>
+#include<deque>
+#include<stack>
+#include<bitset>
+#include<algorithm>
+#include<functional>
+#include<numeric>
+#include<utility>
+#include<sstream>
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+#include<cstdlib>
+#include<ctime>
+#include<fstream>
+#include<typeinfo>
+#include<locale>
+#include<iterator>
+#include<valarray>
+#include<complex>
+#include<climits>
+
+using namespace std;
+#define uld unsingned long long
+#define ld long long
+#define inf INT_MAX
+#define pi 2*acos(0.0)
+#define vi vector<int>
+#define  vl vector<long long>
+#define pdd pair<int, int>
+#define pll pair<long long, long long>
+#define mp make_pair
+#define mdd map<int, int>
+#define mod 1000000000
+#define pf first
+#define ps second
+#define vsort(v) sort(v.begin(), v.end())
+#define cas(a) printf("Case %d:",a)
+#define pb push_back
+long s;
+int main()
+{
+        int cas,b,i,j,len;
+        string line;
+        scanf("%d",&cas);
+        getchar();
+        long a;
+        for(int i=0;i<cas;i++)
+        {
+                getline(cin,line);
+                len=line.length();
+                a=1;
+                for(j=0;j<len;j++)
+                {
+                        if((line[j]>='a'&&line[j]<='z')&&line[j-1]==' ')
+                        a++;
+                }
+                cout<<(a*420)<<endl;
+        }
+      return 0;
+}

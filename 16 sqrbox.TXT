@@ -1,0 +1,23 @@
+//http://cpbook.subeen.com/2012/11/square-box-1.html
+#include <stdio.h>
+int main()
+{
+        int i,j,t,cas,num;
+        scanf("%d",&cas);
+        for(t=1;t<=cas;t++)
+        {
+                if(t!=1)
+                printf("\n");
+                scanf("%d",&num);
+                for(i=1;i<=num;i++)
+                {
+                        for(j=1;j<=num;j++)
+                        {
+                                printf("*");
+                        }
+                        printf("\n");
+                }
+        }
+        return 0;
+}
+
